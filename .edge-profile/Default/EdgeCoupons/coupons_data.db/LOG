@@ -1,7 +1,6 @@
-2026/05/18-03:14:00.527 1620 Reusing MANIFEST C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/05/18-03:14:00.529 1620 Recovering log #4
-2026/05/18-03:14:00.534 1620 Level-0 table #7: started
-2026/05/18-03:14:00.606 1620 Level-0 table #7: 682628 bytes OK
-2026/05/18-03:14:00.606 1620 Recovering log #7
-2026/05/18-03:14:00.613 1620 Reusing old log C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/000007.log 
-2026/05/18-03:14:00.616 1620 Delete type=0 #4
+2026/05/18-03:57:14.406 1a90 Reusing MANIFEST C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/18-03:57:14.407 1a90 Recovering log #13
+2026/05/18-03:57:14.408 1a90 Reusing old log C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/000013.log 
+2026/05/18-03:57:14.498 1b28 Level-0 table #18: started
+2026/05/18-03:57:14.506 1b28 Level-0 table #18: 682639 bytes OK
+2026/05/18-03:57:14.509 1b28 Delete type=0 #13

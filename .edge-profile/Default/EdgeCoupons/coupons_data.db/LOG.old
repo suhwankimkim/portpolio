@@ -1,3 +1,14 @@
-2026/05/18-03:12:55.047 5268 Reusing MANIFEST C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/05/18-03:12:55.058 5268 Recovering log #4
-2026/05/18-03:12:55.060 5268 Reusing old log C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/000004.log 
+2026/05/18-03:48:17.311 4474 Reusing MANIFEST C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/05/18-03:48:17.312 4474 Recovering log #10
+2026/05/18-03:48:17.313 4474 Reusing old log C:\Users\suhwan\Documents\dev\portpolio\.edge-profile\Default\EdgeCoupons/coupons_data.db/000010.log 
+2026/05/18-03:48:17.346 5d90 Level-0 table #14: started
+2026/05/18-03:48:17.353 5d90 Level-0 table #14: 682628 bytes OK
+2026/05/18-03:48:17.356 5d90 Delete type=0 #10
+2026/05/18-03:48:17.357 5d90 Compacting 4@0 + 0@1 files
+2026/05/18-03:48:17.369 5d90 Generated table #15@0: 4 keys, 682536 bytes
+2026/05/18-03:48:17.369 5d90 Compacted 4@0 + 0@1 files => 682536 bytes
+2026/05/18-03:48:17.371 5d90 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/18-03:48:17.372 5d90 Delete type=2 #7
+2026/05/18-03:48:17.372 5d90 Delete type=2 #9
+2026/05/18-03:48:17.372 5d90 Delete type=2 #11
+2026/05/18-03:48:17.372 5d90 Delete type=2 #14
