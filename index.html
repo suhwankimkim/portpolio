@@ -1,0 +1,571 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Suhwan Kim Portfolio" />
+    <title>Portfolio | 김수환</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="floating-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+      <div class="orb orb-5"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo" data-i18n="nav.logo">김수환</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li>
+            <a
+              href="resume_new.pdf"
+              class="nav-link"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="nav.resume"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="toggle-btn lang-toggle" id="langToggle" aria-label="Language Toggle">
+            <span class="lang-option" data-lang="en">EN</span>
+            <span class="lang-divider">/</span>
+            <span class="lang-option active" data-lang="ko">KO</span>
+          </button>
+          <button class="toggle-btn theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        <div class="hamburger" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-greeting" data-i18n="hero.greeting">HELLO, I'M</p>
+        <h1 class="hero-name" data-i18n="hero.name">김수환</h1>
+        <p class="hero-role" data-i18n="hero.role">예비 AI 엔지니어 / Data Scientist</p>
+        <p class="hero-location" data-i18n-html="hero.location">
+          <i class="fas fa-map-marker-alt"></i> Gwangmyeong-si, Gyeonggi-do
+        </p>
+        <p class="hero-description" data-i18n="hero.description">
+          데이터 분석과 AI 모델링을 통해 문제를 해결하고,
+          실제로 동작하는 결과물로 구현하는 예비 AI 엔지니어 / Data Scientist입니다.
+        </p>
+        <div class="hero-buttons">
+          <a
+            href="resume_new.pdf"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+            data-i18n="hero.resume"
+            >이력서 보기 <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.contact"
+            >연락하기 <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section.about">About</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3 class="about-role" data-i18n="about.role">예비 AI 엔지니어 / Data Scientist</h3>
+            <p class="about-description" data-i18n="about.desc1">
+              데이터를 구조화하고, 문제를 모델링하고, 실제로 동작하는 시스템으로 연결하는 과정에
+              강점을 가진 예비 AI 엔지니어 / Data Scientist입니다. 데이터 분석과 모델 개발뿐 아니라
+              머신러닝과 LLM 기반 서비스를 실제로 구현하는 일에 관심이 많습니다.
+            </p>
+            <p class="about-description" data-i18n="about.desc2">
+              프로젝트와 경진대회를 통해 Python, SQL, 머신러닝, LLM, RAG, MLOps 기반의 실무형
+              경험을 쌓아왔으며, 이를 바탕으로 실용적인 모델링 역량과 협업 중심의 문제 해결 능력을
+              키워왔습니다.
+            </p>
+
+            <div class="about-education">
+              <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="education-content">
+                  <h4 data-i18n="about.eduTitle">학력</h4>
+                  <p data-i18n-html="about.eduContent">
+                    <strong>학사 학위</strong><br />
+                    <span style="padding-left: 1rem; display: inline-block;">인하대 통계학 21'</span
+                    ><br />
+                    <strong>석사 학위</strong><br />
+                    <span style="padding-left: 1rem; display: inline-block;"
+                      >인하대 데이터사이언스학 25'</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="education-item">
+                <i class="fas fa-code"></i>
+                <div class="education-content">
+                  <h4 data-i18n="about.bootcampTitle">부트캠프</h4>
+                  <p data-i18n-html="about.bootcampContent">
+                    <strong>FastCampus AI 부트캠프</strong><br />
+                    <span style="padding-left: 1rem; display: inline-block;">14기 수료</span>
+                  </p>
+                </div>
+              </div>
+              <div class="education-item">
+                <i class="fas fa-award"></i>
+                <div class="education-content">
+                  <h4 data-i18n="about.awardsTitle">수상 및 자격증</h4>
+                  <p data-i18n-html="about.awardsContent">
+                    <span>ADsP(데이터분석 준전문가) 20'</span><br />
+                    <span>2022 인하 인공지능 챌린지 - 우수상 22'</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <h3>8+</h3>
+                <p data-i18n-html="about.stat1">Projects<br />Completed</p>
+              </div>
+              <div class="stat-item">
+                <h3>69.3%</h3>
+                <p data-i18n-html="about.stat2">Avg Performance<br />Gain</p>
+              </div>
+              <div class="stat-item">
+                <h3>5</h3>
+                <p data-i18n-html="about.stat3">Leadership<br />Experiences</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section.skills">Technical Skills</h2>
+        <div class="skills-scroll-container">
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-code"></i>
+              <span data-i18n="skills.lang">Languages</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-python"></i>Python</span>
+              <span class="skill-tag"><i class="fas fa-chart-line"></i>R</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>SQL</span>
+              <span class="skill-tag"><i class="fas fa-terminal"></i>Bash</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-brain"></i>
+              <span data-i18n="skills.frameworks">Frameworks &amp; Libraries</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-fire"></i>PyTorch</span>
+              <span class="skill-tag"><i class="fas fa-robot"></i>Transformers</span>
+              <span class="skill-tag"><i class="fas fa-chart-line"></i>XGBoost</span>
+              <span class="skill-tag"><i class="fas fa-chart-line"></i>LightGBM</span>
+              <span class="skill-tag"><i class="fas fa-brain"></i>Scikit-learn</span>
+              <span class="skill-tag"><i class="fas fa-table"></i>Pandas</span>
+              <span class="skill-tag"><i class="fas fa-calculator"></i>NumPy</span>
+              <span class="skill-tag"><i class="fas fa-chart-area"></i>Pyplot</span>
+              <span class="skill-tag"><i class="fas fa-face-smile"></i>Hugging Face Datasets</span>
+              <span class="skill-tag"><i class="fas fa-link"></i>LangChain</span>
+              <span class="skill-tag"><i class="fas fa-sliders"></i>Optuna</span>
+              <span class="skill-tag"><i class="fas fa-image"></i>Albumentations</span>
+              <span class="skill-tag"><i class="fas fa-camera"></i>OpenCV</span>
+              <span class="skill-tag"><i class="fas fa-sitemap"></i>LangGraph</span>
+              <span class="skill-tag"><i class="fas fa-chart-pie"></i>Seaborn</span>
+              <span class="skill-tag"><i class="fas fa-box"></i>uv</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-robot"></i>
+              <span data-i18n="skills.ai">AI / ML</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fas fa-comment-dots"></i>LLM</span>
+              <span class="skill-tag"><i class="fas fa-language"></i>NLP</span>
+              <span class="skill-tag"><i class="fas fa-eye"></i>CV</span>
+              <span class="skill-tag"><i class="fas fa-star"></i>Recsys</span>
+              <span class="skill-tag"><i class="fas fa-layer-group"></i>RAG</span>
+              <span class="skill-tag"><i class="fas fa-microchip"></i>Local LLM Fine-tuning</span>
+              <span class="skill-tag"><i class="fas fa-code"></i>Codex</span>
+              <span class="skill-tag"><i class="fas fa-magnifying-glass"></i>IR</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-cubes"></i>
+              <span data-i18n="skills.ops">MLOps / Infra</span>
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-docker"></i>Docker</span>
+              <span class="skill-tag"><i class="fab fa-github"></i>GitHub Actions</span>
+              <span class="skill-tag"><i class="fab fa-git-alt"></i>Git</span>
+              <span class="skill-tag"><i class="fas fa-microchip"></i>CUDA</span>
+              <span class="skill-tag"><i class="fas fa-chart-line"></i>Weights &amp; Biases</span>
+              <span class="skill-tag"><i class="fas fa-route"></i>MLflow</span>
+              <span class="skill-tag"><i class="fas fa-bolt"></i>FastAPI</span>
+              <span class="skill-tag"><i class="fas fa-database"></i>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section.projects">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p1.title">
+                미세먼지 우심지역(Hot Spot) 통합 관리를 위한 지능형 의사결정시스템 개발
+              </h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p1.subtitle">
+              음영지역 미세먼지 기상예보 모델 개발
+            </p>
+            <p class="project-role" data-i18n="projects.p1.role">Role: Team Lead / Model Development</p>
+            <p class="project-description" data-i18n="projects.p1.desc">
+              서울 약 850개 지역에 설치된 실외 공기질 측정기(IoT)를 활용해 미세먼지 우심지역(Hot
+              Spot)을 예측하는 의사결정 지원 모델을 개발하여 고객들에게 실시간 미세먼지 Air Map을
+              제공했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">R</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">GAM</span>
+              <span class="tech-badge">LOESS</span>
+              <span class="tech-badge">XGBoost</span>
+              <span class="tech-badge">Response Surface Model</span>
+              <span class="tech-badge">MARS</span>
+              <span class="tech-badge">MLP</span>
+              <span class="tech-badge">Moran's I</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p1.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> 서울지역 음영지역에 대한 미세먼지 예측 모델을 구축하고 RMSE,
+              NRMSE, 잔차 분석, Moran's I 기반 공간 자기상관 검정으로 성능을 검증했습니다.
+            </div>
+            <a href="김수환(포트폴리오).pdf" class="project-link" target="_blank" rel="noreferrer"
+              >View</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p2.title">IoT기반 인공지능 재활용 폐기물 그린데이터 플랫폼 구축</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p2.subtitle">재활용 폐기물 수거 거점 최적 위치 제안</p>
+            <p class="project-description" data-i18n="projects.p2.desc">
+              공공 및 비공개 도시 데이터를 바탕으로 인천 지역 재활용 폐기물 수거 거점의 최적 위치를
+              도출하고, 운영 데이터를 기반으로 한 위치 의사결정을 지원했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">R</span>
+              <span class="tech-badge">LSTM</span>
+              <span class="tech-badge">RandomForest</span>
+              <span class="tech-badge">XGBoost</span>
+              <span class="tech-badge">K-NN</span>
+              <span class="tech-badge">Spatial Analysis</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p2.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> 인천 동구 11개 수거거점의 최적 위치를 제안하고 데이터 기반 운영
+              계획 수립에 기여했습니다.
+            </div>
+            <a href="김수환(포트폴리오).pdf" class="project-link" target="_blank" rel="noreferrer"
+              >View</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p3.title">금융 AI Agent</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p3.subtitle">Custom Multi Agent System</p>
+            <p class="project-description" data-i18n="projects.p3.desc">
+              금융 지식이 전무한 초보자도 쉽게 활용할 수 있도록 만든 LangChain/LangGraph 기반 멀티
+              에이전트 시스템으로, 금융 도메인 Q&amp;A, 주식 분석 및 비교, 차트 생성과 문서 파일
+              저장을 지원합니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">LangGraph</span>
+              <span class="tech-badge">yfinance</span>
+              <span class="tech-badge">ChromaDB</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">Upstage Solar-Pro2</span>
+              <span class="tech-badge">Tabily</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">PyPDFLoader</span>
+              <span class="tech-badge">HuggingFace Embeddings</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p3.result">
+              <i class="fas fa-check-circle"></i>
+              <strong>Result:</strong> 금융지식이 전무한 초보자를 위한 End-to-End 멀티 에이전트
+              시스템 구현
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/Agent_project"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p4.title">Seoul House Price Prediction Competition</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p4.subtitle">Apartment Price Regression</p>
+            <p class="project-role" data-i18n="projects.p4.role">Role: Team Lead / ML Engineer</p>
+            <p class="project-description" data-i18n="projects.p4.desc">
+              서울 아파트 실거래가 데이터를 기반으로 EDA, 전처리, 피처 엔지니어링, 앙상블 모델링을
+              결합한 회귀 파이프라인을 구축했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">RandomForest</span>
+              <span class="tech-badge">LightGBM</span>
+              <span class="tech-badge">XGBoost</span>
+              <span class="tech-badge">Ridge</span>
+              <span class="tech-badge">TabNet</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p4.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> RMSE 49.7% 향상<br /><span
+                style="padding-left: 1rem; display: inline-block;"
+                >(34223 → 17199)</span
+              >
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/ML_Competition"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p5.title">영화 평점 예측 MLOps 서비스</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p5.subtitle">Movie Rating Prediction MLOps</p>
+            <p class="project-role" data-i18n="projects.p5.role">Role: Team Lead / ML Engineer</p>
+            <p class="project-description" data-i18n="projects.p5.desc">
+              TMDB 메타데이터를 기반으로 영화 평점을 예측하는 서비스로, 데이터 수집부터 전처리,
+              학습, 배포, 모니터링까지 이어지는 자동화된 MLOps 파이프라인을 구축했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">MLflow</span>
+              <span class="tech-badge">Airflow</span>
+              <span class="tech-badge">LightGBM</span>
+              <span class="tech-badge">XGBoost</span>
+              <span class="tech-badge">RandomForest</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">GitHub Actions</span>
+              <span class="tech-badge">AWS EC2</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p5.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> End-to-End CI/CD MLOps Pipeline 구현
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/MLOps"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p6.title">한국어 일상 대화 요약</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p6.subtitle">Dialogue Summarization</p>
+            <p class="project-role" data-i18n="projects.p6.role">Role: Team Lead / NLP Engineer</p>
+            <p class="project-description" data-i18n="projects.p6.desc">
+              한국어 일상 대화 요약 프로젝트로, 전처리 및 AI를 활용한 topic feature 생성을 통해
+              성능을 개선했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">transformer</span>
+              <span class="tech-badge">KoBART</span>
+              <span class="tech-badge">Qwen3</span>
+              <span class="tech-badge">QLoRA</span>
+              <span class="tech-badge">Solar-pro2</span>
+              <span class="tech-badge">Hydra</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p6.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> Rouge 점수 2.9% 향상<br /><span
+                style="padding-left: 1rem; display: inline-block;"
+                >(46.7182 → 48.0688)</span
+              >
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/NLP"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p7.title">문서 타입 분류</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p7.subtitle">Document Type Classification</p>
+            <p class="project-role" data-i18n="projects.p7.role">Role: Team Lead / CV Engineer</p>
+            <p class="project-description" data-i18n="projects.p7.desc">
+              다양한 문서 도메인을 대상으로 강한 온라인 증강, StratifiedKFold, 가중치 앙상블을
+              활용한 문서 이미지 분류 파이프라인을 구축했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">ConvNeXtV2</span>
+              <span class="tech-badge">EfficientNetV2</span>
+              <span class="tech-badge">DeiT3</span>
+              <span class="tech-badge">SwinV2</span>
+              <span class="tech-badge">Albumentations</span>
+              <span class="tech-badge">Augraphy</span>
+              <span class="tech-badge">timm</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p7.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> Macro F1 점수 117.3% 향상<br /><span
+                style="padding-left: 1rem; display: inline-block;"
+                >(0.438 → 0.9517)</span
+              >
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/CV"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects.p8.title">과학 지식 질의 응답 시스템</h3>
+              <span class="project-tag completed" data-i18n="projects.completed">Completed</span>
+            </div>
+            <p class="project-subtitle" data-i18n="projects.p8.subtitle">Science Knowledge RAG</p>
+            <p class="project-description" data-i18n="projects.p8.desc">
+              BM25 검색을 Upstage Solar Embedding 기반 Dense/Hybrid RAG 파이프라인으로 고도화해
+              과학 도메인 질의응답 시스템을 구현했습니다.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Solar Embedding</span>
+              <span class="tech-badge">Elasticsearch</span>
+              <span class="tech-badge">LangGraph</span>
+              <span class="tech-badge">BM25</span>
+              <span class="tech-badge">Dense Retrieval</span>
+              <span class="tech-badge">RAG</span>
+            </div>
+            <div class="project-result" data-i18n-html="projects.p8.result">
+              <i class="fas fa-chart-line"></i>
+              <strong>Result:</strong> MAP 점수 107.3% 향상<br /><span
+                style="padding-left: 1rem; display: inline-block;"
+                >(0.4242 → 0.8795)</span
+              >
+            </div>
+            <a
+              href="https://github.com/suhwankimkim/IR"
+              class="project-link"
+              target="_blank"
+              rel="noreferrer"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="section.contact">Contact</h2>
+        <p class="contact-description" data-i18n="contact.desc">
+          새로운 기회와 협업, 의미 있는 대화를 기다리고 있습니다.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:marscoin8@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3 data-i18n="contact.email">Email</h3>
+            <p>marscoin8@gmail.com</p>
+          </a>
+          <a
+            href="https://github.com/suhwankimkim"
+            class="contact-card"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-github"></i>
+            <h3 data-i18n="contact.github">GitHub</h3>
+            <p>github.com/suhwankimkim</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 김수환. All rights reserved.</p>
+      <p data-i18n="footer.built">Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+@page {
+  size: A4;
+  margin: 16mm 14mm;
+}
+
+body {
+  font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #111827;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 22pt;
+  margin: 0 0 4pt 0;
+}
+
+h2 {
+  font-size: 13pt;
+  margin: 16pt 0 8pt 0;
+  padding-bottom: 3pt;
+  border-bottom: 1px solid #d1d5db;
+}
+
+h3 {
+  font-size: 11pt;
+  margin: 12pt 0 4pt 0;
+}
+
+p, li {
+  margin: 3pt 0;
+}
+
+ul {
+  margin: 4pt 0 8pt 18pt;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #d1d5db;
+  margin: 12pt 0;
+}
+
+code {
+  font-family: Consolas, monospace;
+  font-size: 9.5pt;
+}
